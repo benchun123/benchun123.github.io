@@ -63,7 +63,22 @@ Research Topics: Robotics, Visual SLAM, Autonomous Navigation
 <br>
 
 <h1>Doctoral Thesis</h1>
-TBD
+<p><b>Visual Localization and Mapping with Objects in Logistics Environments</b><br></p>
+<p>
+    <b>Background:</b> Aiming at the lack of semantic information in the logistics map system, the doctoral thesis investigates the significance of objects within robot localization, and mapping systems.
+</p>
+<p>
+    <b>Object Detection:</b> Proposed three different methods to detect 3D objects from a single RGB-D frame with 3D cuboid representation. Experiments on SUN RGB-D dataset show that, the sample-score method outperforms the other two methods in speed (753ms per frame), but the deep learning method achieves the highest accuracy (3D IoU = 0.52, mAP@0.25=0.62). The geometry method provides a compromise between speed and accuracy. Considering different use-case, different methods can be employed.
+</p>
+<p>
+    <b>Object-based Localization:</b> Proposed a visual SLAM system to simultaneously localize camera pose and build the map with objects. On the top of the existing ORB-SLAM 2 system, planes and objects are detected in every key-frames, a new data association strategy is designed to associate these features, and all features are integrated to formulate a unified optimization problem for SLAM. Experiments on ICL-NUIM living room sequences show that, compared to other state-of-the-art visual SLAM systems, introducing objects can benefit scene understanding and camera localization. 
+</p>
+<p>
+    <b>Object-Level Mapping:</b> Presented an efficient semantic mapping pipeline to incrementally build a voxel-based map with individual objects. Experiments are designed on SceneNN dataset, the object points are detected and labelled in every frame, an object association strategy with geometry and semantic descriptor is conducted to track object information, and the objects are integrated into the voxblox framework to incrementally build a global object-level volumetric map while avoiding high computational costs.
+</p>
+<p>
+    <b>Experiments:</b> Evaluated the proposed methods on intra-logistics environments with KARIS PRO mobile platform to demonstrate the effectiveness and robustness in the real world. 
+</p>
 
 <h1>Projects</h1>
 <p><heading><b>AgiProbot</b></heading>
@@ -75,8 +90,8 @@ TBD
     This research project aims to develop a production system for remanufacturing, in which used products can be disassembled and recycled. 7 institutes participate, and we (IFL) develop an autonomous intralogistics system which realizes the material flow of the production system by means of driverless transport systems, smart transfer units and handling robots. To be specific, there are several workstations and transport robots, we are going to design an autonomous navigation system to delivery objects among these workstations.
 </p>
 <p>
-    <img src="web_page/research_files/P1_AgiProbot_Env.png" width="400">
-    <img src="web_page/research_files/P1_AgiProbot_Navigation.png" width="540"></a>
+    <img src="web_page/research_files/P1_AgiProbot_Env.png" width="340">
+    <img src="web_page/research_files/P1_AgiProbot_Navigation.png" width="460"></a>
 </p>
 
 <p><heading><b>SDM4FZI</b></heading>
@@ -88,7 +103,7 @@ TBD
     In the automotive industry, Software Defined Manufacturing (SDM) technology was used to study the ability of systems to dynamically respond to production changes. The basic prerequisite is the abstraction of the hardware by digital twins with the help of which the software can be automatically derived and distributed. Specifically, we are going to implement a digital twin system to study multi-robot system.
 </p>
 <p>
-    <img src="web_page/research_files/P2_SDM4FZI.png" width="900"></a>
+    <img src="web_page/research_files/P2_SDM4FZI.png" width="800"></a>
 </p>
 
 <p><heading><b>ACDU: Automatic Connection Device Underbody</b></heading>
@@ -98,7 +113,7 @@ TBD
     The research project aims to design an autonomous robot capable of docking a charger to electric cars from underbody. After search for many feasible solutions, we finally choose an infrared LEDs based solution with Jetson Nano and Raspberry Pi cameras. We implement different functions to realize docking, including number plate recognition, car localization, fine position navigation, etc. Furthermore, we evaluate the whole system in a test environments with a docking success rate of about 9/10.
 </p>
 <p>
-    <img src="web_page/research_files/P3_ACDU.png" width="900"></a>
+    <img src="web_page/research_files/P3_ACDU.png" width="800"></a>
 </p>
 
 <h1>Publications</h1>
